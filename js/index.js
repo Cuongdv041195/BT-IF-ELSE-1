@@ -116,6 +116,8 @@ document.getElementById('xacDinh').onclick = function () {
             xacDinhTamGiac = "Tam Giác Cân"
         } else if ((canhSo1 * canhSo1) == (canhSo2 * canhSo2) + (canhSo3 * canhSo3) || (canhSo2 * canhSo2) == (canhSo1 * canhSo1) + (canhSo3 * canhSo3) || (canhSo3 * canhSo3) == (canhSo1 * canhSo1) + (canhSo2 * canhSo2)) {
             xacDinhTamGiac = "Tam Giác Vuông"
+        }else if ((canhSo1 != canhSo2) && (canhSo1 != canhSo3) && (canhSo2 != canhSo3)){
+            xacDinhTamGiac = "Tam Giác Nhọn"
         }
     } else{
         alert ('Không thỏa điều kiện')
